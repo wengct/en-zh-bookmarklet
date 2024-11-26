@@ -149,4 +149,13 @@
             }
         }
     }
+    
+    //https://playwright.dev
+    if (ln.indexOf('//playwright.dev/') >= 0) {
+        void(location.href = ln.replace(/playwright\.dev/i, 'playwright.tw'));
+    }
+    //https://playwright.tw
+    if (ln.indexOf('//playwright.tw/') >= 0) {
+        void(location.href = ln.replace(/playwright\.tw/i, 'playwright.dev'));
+    }
 }());
